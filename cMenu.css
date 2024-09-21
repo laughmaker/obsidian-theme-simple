@@ -1,0 +1,52 @@
+
+/* 
+ * 调整 cMenu Toolbar Editor 样式 
+ */
+ #cMenuToolbarModalBar.cMenuToolbarFlex :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]) {
+    margin: 5px !important;
+}
+
+#cMenuToolbarModalBar.cMenuToolbarGlassAesthetic,
+#cMenuToolbarModalBar.cMenuToolbarGlassAesthetic~#cMenuToolbarPopoverBar {
+    backdrop-filter: blur(10px);
+    background-color: #171717de;
+}
+
+:is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem button.menu-item {
+    padding: 10px 5px !important;
+}
+
+#cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line) {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+#cMenuToolbarModalBar.top {
+    border-bottom: solid 1px var(--background-modifier-border);
+    top: 0px !important;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border: none;
+    border-radius: 0 !important;
+}
+
+#cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic {
+    box-shadow: 1px 0px 1px 1px var(--background-modifier-border);
+    border-radius: 10px;
+}
+
+#cMenuToolbarModalBar.cMenuToolbarGlassAesthetic,
+#cMenuToolbarModalBar.cMenuToolbarGlassAesthetic~#cMenuToolbarPopoverBar {
+    backdrop-filter: blur(20px);
+}
+
+:is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button.cMenuToolbar-Divider-Line {
+    min-width: unset;
+    flex-shrink: 0;
+    display: inline-flex;
+    width: 0.6px !important;
+    height: 22px;
+    opacity: 0.8;
+    margin: 0;
+    min-width: 0.5px !important;
+}

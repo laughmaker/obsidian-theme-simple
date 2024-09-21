@@ -1,0 +1,26 @@
+/* 修复搜索框溢出的bug */
+
+.omnisearch-result__body {
+  word-break: break-all;
+}
+
+.heading-list-item .text-wrap .text {
+  min-height: 0;
+}
+
+.omnisearch-modal .prompt-instructions {
+  display: none;
+}
+
+.omnisearch-modal .prompt-results {
+  padding: 0px var(--size-4-3);
+}
+
+/* 调整搜索栏样式 */
+.omnisearch-result__body {
+  padding-left: 17px;
+}
+
+.omnisearch-result__folder-path svg.svg-icon.lucide-folder-open {
+  padding: 4px 2px 2px 2px;
+}
